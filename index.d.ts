@@ -37,8 +37,8 @@ export interface StyleState {
 // =======================
 
 export interface ComposableMapProps extends React.SVGProps<SVGSVGElement> {
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   projection?: string | ProjectionFunction;
   projectionConfig?: ProjectionConfig;
   className?: string;

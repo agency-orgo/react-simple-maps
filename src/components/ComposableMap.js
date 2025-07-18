@@ -15,16 +15,22 @@ const ComposableMap = forwardRef(
     },
     ref
   ) => {
+    // Handle responsive dimensions
+    const numericWidth = typeof width === 'number' ? width : 800
+    const numericHeight = typeof height === 'number' ? height : 600
+    
     return (
       <MapProvider
-        width={width}
-        height={height}
+        width={numericWidth}
+        height={numericHeight}
         projection={projection}
         projectionConfig={projectionConfig}
       >
         <svg
           ref={ref}
-          viewBox={`0 0 ${width} ${height}`}
+          width={width}
+          height={height}
+          viewBox={`0 0 ${numericWidth} ${numericHeight}`}
           className={`rsm-svg ${className}`}
           {...restProps}
         />
