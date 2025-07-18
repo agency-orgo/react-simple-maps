@@ -12,6 +12,7 @@ export type GeographyFeature = {
   properties: any;
   svgPath?: string;
   rsmKey?: string;
+  id?: string | number;
 };
 
 export type Geography = GeographyFeature[] | any;
@@ -35,7 +36,7 @@ export interface StyleState {
 // Component Props
 // =======================
 
-export interface ComposableMapProps {
+export interface ComposableMapProps extends React.SVGProps<SVGSVGElement> {
   width?: number;
   height?: number;
   projection?: string | ProjectionFunction;
