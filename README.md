@@ -1,3 +1,14 @@
+# Fixing stuff
+
+copy and paste, change tag
+```bash
+git add .
+git commit -m "Fix v3.1.1 - Add SVG props to Geography component"
+git tag v3.1.1
+git push origin main  
+git push origin v3.1.1
+```
+
 <img src="https://img.shields.io/bundlephobia/minzip/react-simple-maps?color=%2328cb95&label=gzip" />
 
 # react-simple-maps

@@ -65,7 +65,7 @@ export interface GeographiesProps {
   className?: string;
 }
 
-export interface GeographyProps {
+export interface GeographyProps extends Omit<React.SVGProps<SVGPathElement>, 'style'> {
   geography?: GeographyFeature;
   onMouseEnter?: (event: React.MouseEvent) => void;
   onMouseLeave?: (event: React.MouseEvent) => void;
