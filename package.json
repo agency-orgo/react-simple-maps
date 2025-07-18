@@ -1,5 +1,5 @@
 {
-  "name": "react-simple-maps",
+  "name": "@agency-orgo/react-simple-maps",
   "version": "3.0.0",
   "description": "An svg map chart component built with and for React",
   "main": "dist/index.js",
@@ -14,9 +14,12 @@
     "prepare": "rollup -c",
     "test": "mocha './tests/**/*.spec.js' --require @babel/register"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zcreativelabs/react-simple-maps.git"
+    "url": "git+https://github.com/agency-orgo/react-simple-maps.git"
   },
   "keywords": [
     "react",
