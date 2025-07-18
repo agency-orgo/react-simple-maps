@@ -12,7 +12,7 @@
     "build": "rollup -c",
     "watch": "rollup -cw",
     "prepare": "rollup -c",
-    "test": "mocha './tests/**/*.spec.js' --compilers js:@babel/register"
+    "test": "mocha './tests/**/*.spec.js' --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -42,8 +42,8 @@
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "expect": "^23.5.0",
-    "mocha": "^5.2.0",
+    "expect": "^30.0.4",
+    "mocha": "^11.7.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
